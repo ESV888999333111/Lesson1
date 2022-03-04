@@ -38,7 +38,7 @@ public class SecondLesson {
         } else {
             System.out.println("Ошибка");
         }
-        int month = 1000;
+        int month = 8;
         if (month == 1 || month == 2 || month == 12) {
             System.out.println("Зима");
         } else if ((month >= 3) && (month <= 5)) {
@@ -46,6 +46,18 @@ public class SecondLesson {
         } else if ((month >= 6) && (month <= 8)) {
             System.out.println("Лето");
         } else if ((month >= 9) && (month <= 11)) {
+            System.out.println("Осень");
+        } else {
+            System.out.println("Серьезно!!!!");
+        }
+        // Вариант 2 короче
+        if (month == 1 || month == 2 || month == 12) {
+            System.out.println("Зима");
+        } else if (month <= 5) {
+            System.out.println("Весна");
+        } else if (month <= 8) {
+            System.out.println("Лето");
+        } else if (month <= 11) {
             System.out.println("Осень");
         } else {
             System.out.println("Серьезно!!!!");
