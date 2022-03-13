@@ -62,5 +62,63 @@ public class SecondLesson {
         } else {
             System.out.println("Серьезно!!!!");
         }
+        /* операторы принятия решения
+        Switch (выражения или переменные){
+        case значение1:
+        инструкции
+        [break]
+        case значение2:
+        инструкции
+        [break]
+        case значение3:
+        инструкции
+        [break]
+        default:
+        инструкции
+        [break]
+        }
+        Switch выполнит иструкции от первого совпадения до конца или до break
+         */
+        switch (month) {
+            case 1:
+            case 2:
+            case 12:
+                System.out.println("Зима");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("Весно");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("Лето");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("Осень");
+                break;
+            default:
+                System.out.println("NOUP");
+        }
+        int sum = 1000, saleCode = 4525;
+        switch (saleCode) {
+            case 4525:
+                System.out.println("Сумма покупки: " + sum * 0.7);
+                break;
+            case 6424:
+            case 7012:
+                System.out.println("Сумма покупки: " + (double) sum * 0.8);
+                break;
+            case 7647:
+            case 9011:
+            case 6612:
+                System.out.println("Сумма покупки: " + (double) sum * 0.9);
+                break;
+            default:
+                System.out.println("Сумма покупки: " + sum);
+        }
     }
 }
